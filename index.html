@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Psic. Francisco Javier Cárdenas Luna | Terapia y Neuropsicología Cozumel</title>
+  <meta name="description" content="Consultorio de terapia psicológica y rehabilitación neuropsicológica del Psic. Francisco Javier Cárdenas Luna en Cozumel. Encontrá bienestar emocional y cognitivo.">
+  <meta name="keywords" content="psicologo cozumel, neuropsicologia cozumel, terapia psicologica, rehabilitacion cognitiva, Francisco Cardenas Luna, salud mental">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Psic. Francisco Javier Cárdenas Luna | Terapia y Neuropsicología Cozumel">
+  <meta property="og:description" content="Terapia psicológica y rehabilitación neuropsicológica en San Miguel de Cozumel. Agendá tu cita en línea.">
+  <meta property="og:image" content="assets/hero_bg.png">
+  <meta property="og:url" content="https://www.facebook.com/CALUFRAGO">
+  
+  <!-- Google Fonts: Outfit (headings) and Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+      <a href="#inicio" class="logo" id="logo-link">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 18H11V16H13V18ZM15.21 11.21L14.3 12.12C13.57 12.85 13 13.5 13 15H11V14.5C11 13.4 11.45 12.4 12.18 11.68L13.42 10.42C13.79 10.05 14 9.55 14 9C14 7.9 13.1 7 12 7C10.9 7 10 7.9 10 9H8C8 6.79 9.79 5 12 5C14.21 5 16 6.79 16 9C16 9.88 15.64 10.68 15.21 11.21Z" fill="currentColor"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Psic. Francisco Cárdenas</span>
+          <span class="logo-sub">Neuropsicología & Terapia</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="header-actions">
+        <button class="btn btn-primary btn-nav" id="btn-open-modal-nav">Agendar Cita</button>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-bg" style="background-image: url('assets/hero_bg.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-card">
+        <span class="hero-tag">Consultorio de Especialidad</span>
+        <h1 class="hero-title">Encontrá el camino hacia tu bienestar emocional y cognitivo</h1>
+        <p class="hero-subtitle">Atención psicoterapéutica y rehabilitación neuropsicológica con base científica y calidez humana. En Cozumel y en línea.</p>
+        
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-lg" id="btn-open-modal-hero">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 4H18V2H16V4H8V2H6V4H5C3.89 4 3.01 4.9 3.01 6L3 20C3 21.1 3.89 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4ZM19 20H5V9H19V20ZM9 14H7V12H9V14ZM13 14H11V12H13V14ZM17 14H15V12H17V14ZM9 18H7V16H9V18ZM13 18H11V16H13V18ZM17 18H15V16H17V18Z" fill="currentColor"/>
+            </svg>
+            Agendar Turno Online
+          </button>
+          <a href="https://wa.me/529871151617?text=Hola%20Psic.%20Francisco%2C%20quisiera%20consultar%20por%20una%20cita." target="_blank" class="btn btn-secondary btn-lg" id="btn-whatsapp-hero">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.47 16.86L2 22L7.3 20.61C8.74 21.39 10.37 21.81 12.04 21.81C17.5 21.81 21.95 17.36 21.95 11.9C21.95 9.26 20.92 6.78 19.05 4.91C17.18 3.04 14.7 2 12.04 2ZM17.89 15.37C17.64 16.08 16.48 16.65 15.93 16.71C15.42 16.77 14.77 16.82 12.53 15.89C9.66 14.7 7.8 11.77 7.66 11.58C7.52 11.39 6.48 10 6.48 8.57C6.48 7.14 7.21 6.45 7.5 6.16C7.79 5.87 8.27 5.75 8.75 5.75C8.9 5.75 9.04 5.76 9.17 5.76C9.54 5.78 9.73 5.8 9.98 6.39C10.27 7.1 10.98 8.82 11.07 9.01C11.16 9.2 11.25 9.39 11.13 9.63C11.01 9.87 10.91 9.99 10.72 10.21C10.53 10.43 10.32 10.66 10.15 10.84C9.97 11.03 9.77 11.23 9.99 11.61C10.21 11.99 10.97 13.23 12.09 14.23C13.54 15.52 14.73 15.93 15.15 16.1C15.57 16.27 15.82 16.23 16.06 15.95C16.3 15.67 17.07 14.77 17.36 14.39C17.65 14 17.89 14.05 18.27 14.19C18.66 14.33 20.7 15.34 21.11 15.55C21.52 15.76 21.8 15.86 21.9 16.03C22 16.2 22 17.08 21.64 17.89C21.28 18.7 19.34 19.43 18.5 19.46" fill="currentColor"/>
+            </svg>
+            Contactar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section" id="sobre-mi">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <img src="assets/doctor.png" alt="Psic. Francisco Javier Cárdenas Luna" class="about-image">
+          <div class="about-badge">
+            <span class="badge-number">10+</span>
+            <span class="badge-text">Años de<br>Experiencia</span>
+          </div>
+        </div>
+        
+        <div class="about-info">
+          <span class="section-tag">Conocé al Profesional</span>
+          <h2 class="section-title">Psic. Francisco Javier Cárdenas Luna</h2>
+          <h3 class="about-subtitle">Especialista en Terapia Psicológica y Neuropsicología</h3>
+          
+          <p class="about-text">
+            Mi práctica está centrada en brindar herramientas científicas aplicadas con profunda sensibilidad humana. Me especializo en comprender la estrecha relación entre nuestro cerebro, nuestros pensamientos y nuestras emociones.
+          </p>
+          <p class="about-text">
+            Acompaño a personas adultas y adultos mayores en la superación de dificultades emocionales, así como en la evaluación y rehabilitación de funciones cognitivas afectadas por condiciones neurológicas, el envejecimiento o secuelas de lesiones.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon-box">✓</div>
+              <div>
+                <strong>Enfoque Basado en Evidencia</strong>
+                <p>Métodos avalados científicamente (Terapia Cognitivo-Conductual).</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-box">✓</div>
+              <div>
+                <strong>Especialización Neuropsicológica</strong>
+                <p>Evaluación objetiva y diseño de programas de rehabilitación cognitiva.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="servicios">
+    <div class="section-container">
+      <div class="services-header">
+        <span class="section-tag">Servicios del Consultorio</span>
+        <h2 class="section-title text-center">Atención Integral y Especializada</h2>
+        <p class="section-subtitle text-center">Propuestas terapéuticas diseñadas a medida para fortalecer tu salud mental y optimizar tus funciones cognitivas.</p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Terapia Psicológica</h3>
+          <p class="service-card-text">Psicoterapia individual orientada a adolescentes y adultos. Abordaje de ansiedad, depresión, manejo del estrés, duelo y resolución de conflictos interpersonales.</p>
+          <ul class="service-list">
+            <li>Terapia Cognitivo-Conductual (TCC)</li>
+            <li>Gestión emocional y resiliencia</li>
+            <li>Acompañamiento en crisis vitales</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 3H21V5H9V3ZM9 11H21V13H9V11ZM9 19H21V21H9V19ZM3 3H7V5H3V3ZM3 11H7V13H3V11ZM3 19H7V21H3V19Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Evaluación Neuropsicológica</h3>
+          <p class="service-card-text">Estudio detallado del rendimiento de los procesos cognitivos: atención, memoria, funciones ejecutivas y lenguaje. Útil para diagnósticos diferenciales y perfiles de fortaleza.</p>
+          <ul class="service-list">
+            <li>Detección de deterioro cognitivo leve</li>
+            <li>Secuelas cognitivas post-Covid o ACV</li>
+            <li>Diagnóstico en adultos y tercera edad</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c3.9 3.9 10.2 3.9 14.1 0l1.38-1.78C21.14 16.07 21.9 14.11 21.9 12c0-4.97-4.03-9-9-9zm-1 5h2v6h-2V8zm0 8h2v2h-2v-2z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Rehabilitación Cognitiva</h3>
+          <p class="service-card-text">Diseño de programas de estimulación y compensación para restaurar o mantener las capacidades cerebrales y promover la máxima autonomía funcional en la vida diaria.</p>
+          <ul class="service-list">
+            <li>Tratamiento post-traumatismo o ACV</li>
+            <li>Estimulación cognitiva preventiva</li>
+            <li>Entrenamiento en estrategias de memoria</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section class="contact-section" id="contacto">
+    <div class="section-container">
+      <div class="contact-grid">
+        
+        <div class="contact-info-panel">
+          <span class="section-tag">¿Hablamos?</span>
+          <h2 class="section-title">Ubicación e Información de Contacto</h2>
+          <p class="contact-lead-text">El consultorio se encuentra en una zona accesible de San Miguel de Cozumel. Podés agendar tu sesión presencial u online.</p>
+          
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong>Dirección</strong>
+                <p>130 Av. Sur, Esquina con Calle Dr. Adolfo Rosado Salas,<br>San Miguel de Cozumel, Quintana Roo, México.</p>
+              </div>
+            </div>
+            
+            <div class="contact-detail-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <strong>Teléfono / WhatsApp</strong>
+                <p>+52 987 115 1617</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <strong>Correo Electrónico</strong>
+                <p>contacto@calufrago.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-cta-wrapper">
+            <button class="btn btn-primary" id="btn-open-modal-contact">Agendar en Google Calendar</button>
+          </div>
+        </div>
+
+        <div class="contact-map-wrapper">
+          <!-- Responsive OpenStreetMap Leaflet Embed Frame -->
+          <iframe 
+            class="contact-map"
+            title="Ubicación del Consultorio del Psicólogo Francisco Cárdenas Luna"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-86.945%2C20.495%2C-86.925%2C20.505&amp;layer=mapnik&amp;marker=20.4996%2C-86.9365"
+            loading="lazy">
+          </iframe>
+          <div class="map-link-container">
+            <a href="https://www.openstreetmap.org/?mlat=20.4996&amp;mlon=-86.9365#map=17/20.4996/-86.9365" target="_blank" class="map-link">Ver mapa en pantalla completa</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="section-container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Consultorio Psic. Francisco Javier Cárdenas Luna. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="https://www.facebook.com/CALUFRAGO" target="_blank" rel="noopener noreferrer">Facebook Page</a>
+          <span>&middot;</span>
+          <a href="#inicio">Volver arriba</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Declarative HTML5 Dialog Booking Modal (with light-dismiss fallback support) -->
+  <dialog id="bookingModal" closedby="any" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <header class="modal-header">
+        <h2 id="modalTitle" class="modal-title">Elegí cómo agendar tu cita</h2>
+        <button class="modal-close-btn" id="btn-close-modal" aria-label="Cerrar modal">&times;</button>
+      </header>
+      
+      <div class="modal-body">
+        <p class="modal-desc">Elegí la opción que te resulte más cómoda para coordinar tu primera sesión.</p>
+        
+        <div class="booking-options">
+          
+          <!-- Option 1: Google Calendar -->
+          <div class="booking-card">
+            <div class="booking-card-icon">📅</div>
+            <h3>Google Calendar</h3>
+            <p>Elegí directamente el horario disponible que prefieras en nuestro calendario en línea.</p>
+            
+            <!-- Standard Google Calendar Booking Button / Link -->
+            <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0..." target="_blank" class="btn btn-primary btn-block">Ver Agenda y Reservar</a>
+          </div>
+          
+          <!-- Option 2: WhatsApp -->
+          <div class="booking-card">
+            <div class="booking-card-icon">💬</div>
+            <h3>WhatsApp Directo</h3>
+            <p>Escribinos si preferís coordinar el turno de forma manual o si tenés alguna duda previa.</p>
+            <a href="https://wa.me/529871151617?text=Hola%20Psic.%20Francisco%2C%20quisiera%20coordinar%20una%20cita%20terapéutica." target="_blank" class="btn btn-secondary btn-block">Enviar Mensaje</a>
+          </div>
+
+        </div>
+        
+        <div class="modal-footer">
+          <p>Ubicación presencial en Cozumel o modalidad online en todo el mundo.</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Script logic -->
+  <script src="app.js"></script>
+</body>
+</html>
