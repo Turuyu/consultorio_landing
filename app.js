@@ -31,18 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   const header = document.getElementById('header');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-      // Dynamic inline adjustments for extra premium transparency/padding changes
-      header.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
-      header.style.boxShadow = 'var(--shadow-md)';
-      header.style.height = '70px';
-    } else {
-      header.classList.remove('scrolled');
-      header.style.backgroundColor = 'var(--glass-bg)';
-      header.style.boxShadow = 'none';
-      header.style.height = 'var(--header-height)';
-    }
+    header.classList.toggle('scrolled', window.scrollY > 50);
   });
 
   // ==========================================================================
@@ -76,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookingDialog = document.getElementById('bookingModal');
   const openModalNav = document.getElementById('btn-open-modal-nav');
   const openModalHero = document.getElementById('btn-open-modal-hero');
-  const openModalContact = document.getElementById('btn-open-modal-contact');
+  const openModalCta = document.getElementById('btn-open-modal-cta');
   const closeModalBtn = document.getElementById('btn-close-modal');
 
   const openBookingModal = () => {
@@ -96,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add click events to triggers
   if (openModalNav) openModalNav.addEventListener('click', openBookingModal);
   if (openModalHero) openModalHero.addEventListener('click', openBookingModal);
-  if (openModalContact) openModalContact.addEventListener('click', openBookingModal);
+  if (openModalCta) openModalCta.addEventListener('click', openBookingModal);
   if (closeModalBtn) closeModalBtn.addEventListener('click', closeBookingModal);
 
   // Close modal with Escape key unlocks scroll
@@ -128,5 +117,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+  }
+
+  // ==========================================================================
+  // CONTACT FORM -> WHATSAPP
+  // ==========================================================================
+  // No backend: the form composes a prefilled WhatsApp message instead.
+  const contactForm = document.getElementById('contact-form');
+  const formHint = document.getElementById('form-hint');
+  const WHATSAPP_NUMBER = '5219996046385';
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const name = contactForm.elements.name.value.trim();
+      const message = contactForm.elements.message.value.trim();
+
+      if (!name || !message) {
+        formHint.textContent = 'Por favor, escribe tu nombre y tu mensaje.';
+        return;
+      }
+
+      formHint.textContent = '';
+      const text = `Hola Psic. Francisco, soy ${name}. ${message}`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+      contactForm.reset();
+    });
   }
 });
